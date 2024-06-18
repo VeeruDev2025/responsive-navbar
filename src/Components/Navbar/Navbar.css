@@ -1,0 +1,99 @@
+/* Navbar.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-bar {
+  background-color: #f8f9fa; /* Light background color */
+  padding: 10px 20px; /* Padding for the navbar */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure the navbar is always on top */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for better separation */
+}
+
+.nav-bar .logo {
+  font-size: 1.5em; /* Font size for the logo */
+  font-weight: bold; /* Bold font for the logo */
+  color: #007bff; /* Logo color */
+  text-decoration: none; /* Remove underline from the logo */
+}
+.logo:hover {
+  color: #fd79a8;
+}
+
+.logo p {
+  margin: 0; /* Remove default margin */
+}
+
+.nav-toggle {
+  display: none; /* Hide the checkbox */
+}
+
+.nav-toggle-label {
+  display: none; /* Hide the label (hamburger) initially */
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.nav-toggle-label .s-1 {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fd5912;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+.nav-toggle-label .s-2 {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #007e1c;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+.nav-toggle-label .s-3 {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #ffc200;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+.list-items-container {
+  display: flex; /* Container flexbox */
+}
+
+.list-items {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Display list items in a row */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.list-items li {
+  margin: 0 15px; /* Space between list items */
+  text-transform: uppercase; /* All items text is uppercase letters */
+}
+
+.list-items a {
+  color: #333; /* Text color for links */
+  text-decoration: none; /* Remove text decoration for links */
+  padding: 5px 10px; /* Padding around links */
+  font-weight: bold; /* Add bold to links */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.list-items a:hover {
+  color: #08d665; /* Change color on hover */
+}
