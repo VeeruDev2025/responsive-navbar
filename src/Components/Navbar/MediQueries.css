@@ -36,23 +36,20 @@
   }
 
   .nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
-    transform: rotate(50deg) translate(5px, 5px);
-    /*Rotatescounddspan*/
+    transform: rotate(50deg) translate(5px, 5px);  ;
     -webkit-transform: rotate(50deg) translate(5px, 5px);
     -moz-transform: rotate(50deg) translate(5px, 5px);
     -ms-transform: rotate(50deg) translate(5px, 5px);
     -o-transform: rotate(50deg) translate(5px, 5px);
-  }
+}
 
   .nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
     transform: rotate(-50deg) translate(5px, -5px);
-    /*Rotatethirdspan*/
-    -webkit-transform: rotate(-45deg) translate(5px, -5px);
+    -webkit-transform: rotate(-50deg) translate(5px, -5px);
     -moz-transform: rotate(-50deg) translate(5px, -5px);
     -ms-transform: rotate(-50deg) translate(5px, -5px);
     -o-transform: rotate(-50deg) translate(5px, -5px);
-    -webkit-transform: rotate(-50deg) translate(5px, -5px);
-  }
+}
   .list-items {
     flex-direction: column;
     width: 100%;
